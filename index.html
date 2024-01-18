@@ -2,21 +2,322 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym and Fitness</title>
-    <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym and Fitness</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-   
+
+<!-- For navigation bar -->
+
+<nav class="navbar navbar-expand-lg py-3 text-uppercase">
+  <div class="container">
+    <a href="#" class="navbar-brand text-white">
+      Gym & Fitness
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collaspe" data-bs-target="#myNavbar">
+      <span class="nabar-toggler-icon"></span>
+    </button>
+    <div class="collaspse navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-1">
+          <a href="#" class="text-white nav-link hover-underline-animation">Home</a>
+        </li>
+
+        <li class="nav-item mx-1">
+          <a href="#" class="text-white nav-link hover-underline-animation">Membership Plan</a>
+        </li>
+
+        <li class="nav-item mx-1">
+          <a href="#" class="text-white nav-link hover-underline-animation">Section</a>
+        </li>
+
+        <li class="nav-item mx-1">
+          <a href="#" class="text-white nav-link hover-underline-animation">Conect Us</a>
+        </li>
+
+        <li class="nav-item mx-1">
+          <a href="#" class="text-white nav-link hover-underline-animation">FAQ</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<header>
+  <img src="images/cover.jpg" style="width: 100%; height: 100%; z-index: -2; " alt="">
+  <!-- <div class="cover-overlay" style="width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background:linear-gradient(to right, #859398, #283048) ;
+  mix-blend-mode: overlay;"> </div> -->
+  <!-- <div class="container py-5" style="margin-right: 50px;">
+        <h1 class="text-white">Fitness</h1>
+        <p style="max-width: 500px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia asperiores quos
+          ipsum fugit nisi nihil autem. Eaque aliquam nobis non assumenda nisi tempore! Recusandae, sint?</p>
+      </div> -->
+</header>
+
+
+<div class="menu-wrap">
+  <input type="checkbox" class="toggler">
+  <div class="hamburger">
+    <div></div>
+  </div>
+  <div class="menu">
+    <div>
+      <div>
+        <ul>
+          <li> <a href="Home.html">Home</a> </li>
+          <li> <a href="Contact Us.html">Contact</a> </li>
+          <li> <a href="About Us.html">About</a> </li>
+          <li> <a href="Question.html">Q&A</a> </li>
+          <li> <a href="Register.html">Register</a> </li>
+          <li> <a href="Drivers.html">Drivers</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="content-title">
+    <h4>
+      About Us
+    </h4>
+  </div>
+  <div class="border-line"></div>
+  <section class="about-us">
+    <div class="container px-5">
+
+      <div class="row align-items-center">
+        <div data-aos="fade-right" class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime incidunt saepe asperiores vel,
+            voluptatibus eveniet. Sapiente consequuntur delectus necessitatibus eaque recusandae? Eveniet blanditiis
+            veritatis, laudantium dolore quam consequatur rem?
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img data-aos="fade-left" class="img-fluid rounded"
+            src="https://media.istockphoto.com/id/1758416916/photo/excercise-equipment-in-a-modern-gym.webp?b=1&s=170667a&w=0&k=20&c=WhbsyDg2oB5Oh3VMIvuQ6C51fx2co_gL3VFSW-Z6VxQ="
+            alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us">
+    <div class="container px-5">
+
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img data-aos="fade-left" class="img-fluid rounded"
+            src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D"
+            alt="">
+        </div>
+        <div data-aos="fade-right" class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime incidunt saepe asperiores vel,
+            voluptatibus eveniet. Sapiente consequuntur delectus necessitatibus eaque recusandae? Eveniet blanditiis
+            veritatis, laudantium dolore quam consequatur rem?
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="trainner" id="trainner">
+    <div class="content-title">
+      <h4>
+        Trainners
+      </h4>
+    </div>
+    <div class="border-line"></div>
+    <div class="container container-box">
+
+      <div class="box col-md-4" data-aos-anchor-placement="top-center">
+        <div class="imgBox rounded-2" style="border: 1px solid #040814;">
+          <img
+            src="https://media.istockphoto.com/id/1040501222/photo/portrait-of-a-personal-trainer-in-the-gym.webp?b=1&s=170667a&w=0&k=20&c=DVPO9-X0AMcWQFvxUMdwj4W23p_EmdyzIwx_ymKWiU8="
+            width="300px" height="300px">
+        </div>
+        <div class="details">
+          <div class="content">
+            <h2>Trainner</h2>
+            <p>Tom Fowler</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box col-md-4">
+        <div class="imgBox rounded-2" style="border: 1px solid #040814;">
+          <img
+            src="https://media.istockphoto.com/id/1040501222/photo/portrait-of-a-personal-trainer-in-the-gym.webp?b=1&s=170667a&w=0&k=20&c=DVPO9-X0AMcWQFvxUMdwj4W23p_EmdyzIwx_ymKWiU8="
+            width="300px" height="300px">
+        </div>
+        <div class="details">
+          <div class="content">
+            <h2>Trainner</h2>
+            <p>Tom Fowler</p>
+          </div>
+        </div>
+      </div>
+      <div class="box col-md-4">
+        <div class="imgBox rounded-2" style="border: 1px solid #040814;">
+          <img
+            src="https://media.istockphoto.com/id/1040501222/photo/portrait-of-a-personal-trainer-in-the-gym.webp?b=1&s=170667a&w=0&k=20&c=DVPO9-X0AMcWQFvxUMdwj4W23p_EmdyzIwx_ymKWiU8="
+            width="300px" height="300px">
+        </div>
+        <div class="details">
+          <div class="content">
+            <h2>Trainner</h2>
+            <p>Tom Fowler</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="box  col-md-4">
+        <div class="imgBox rounded-2" style="border: 1px solid #040814;">
+          <img src="Di1.jpg" width="300px" height="300px">
+        </div>
+        <div class="details">
+          <div class="content">
+            <h2>Technical Director</h2>
+            <p>Tom Fowler</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="clients-says">
+    <div class="container px-5">
+
+      <div class="row align-items-center">
+        <div data-aos="fade-right" class="col-md-6">
+          <p style="color: #5f6168;">Testimonials</p>
+          <h4>Good News From Our Clients</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime incidunt saepe asperiores vel,
+            voluptatibus eveniet. Sapiente consequuntur delectus necessitatibus eaque recusandae? Eveniet blanditiis
+            veritatis, laudantium dolore quam consequatur rem?
+          </p>
+        </div>
+        <div class="card-grid col-md-6">
+          <div class="container text-start">
+            <div class="row row-cols-2">
+              <div class="col py-2 px-2">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <img src="images/cover.jpg" width="50px" height="50px" style="border-radius: 50%;">
+                    <a href="#" class="card-text-end text-black mx-2" style="text-decoration: none; ">Emily</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col py-2 px-2">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <img src="images/cover.jpg" width="50px" height="50px" style="border-radius: 50%;">
+                    <a href="#" class="card-text-end text-black mx-2" style="text-decoration: none; ">Emily</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col py-2 px-2">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <img src="images/cover.jpg" width="50px" height="50px" style="border-radius: 50%;">
+                    <a href="#" class="card-text-end text-black mx-2" style="text-decoration: none; ">Emily</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col py-2 px-2">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <img src="images/cover.jpg" width="50px" height="50px" style="border-radius: 50%;">
+                    <a href="#" class="card-text-end text-black mx-2" style="text-decoration: none; ">Emily</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<footer class="grid-container-3">
+  <div class="container">
+    <div>
+      <h6 class="footer-category">Information</h6>
+      <div>
+        <a href="" class="footer-category-item hover-underline-animation">Section</a><br>
+        <a href="" class="footer-category-item hover-underline-animation">Membership</a><br>
+        <a href="" class="footer-category-item hover-underline-animation">Trainner</a><br>
+      </div>
+    </div>
+
+    <div>
+      <h6 class="footer-category">Support</h6>
+      <div>
+        <a href="" class="footer-category-item hover-underline-animation">My Account</a><br>
+        <a href="" class="footer-category-item hover-underline-animation">Returns</a><br>
+        <a href="" class="footer-category-item hover-underline-animation">FAQs</a><br>
+      </div>
+    </div>
+    <div>
+      <h6 class="footer-category">Contact</h6>
+      <div>
+        <a href="mailto:contact@rcc.com" target="_blank" class="footer-category-item hover-underline-animation">Email
+          Us</a><br>
+        <a href="" class="footer-category-item hover-underline-animation">Phone: +08908709</a><br>
+
+      </div>
+    </div>
+    <div>
+      <h6 class="footer-category">Social</h6>
+      <div>
+        <a href="https://www.facebook.com/" target="_blank"
+          class="footer-category-item hover-underline-animation">Facebook</a><br>
+        <a href="https://www.instagram.com/" target="_blank"
+          class="footer-category-item hover-underline-animation">Instagram</a><br>
+        <a href="https://twitter.com/" target="_blank"
+          class="footer-category-item hover-underline-animation">Twitter</a><br>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p class="text-center">&copy; Copyright 2024, Gym & Fitness</p>
+  </div>
+</footer>
 
 </html>
