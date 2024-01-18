@@ -157,7 +157,7 @@ nav {
 
   /* Border-Line */
   .border-line{
-    width: 100px;
+    width: 120px;
     height: 5px;
     background: var(--second-color);
     margin: 25px auto;
@@ -165,7 +165,7 @@ nav {
 
   .content-title {
     width: 100px;
-    height: 8px;
+    height: 5px;
     margin: 25px auto;
   }
 
