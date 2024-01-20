@@ -1,7 +1,6 @@
 :root {
     --primary-color: #283048;
     --second-color: #859398;
-    --menu-speed: 0.75s;
   }
 *{
     margin: 0;
@@ -243,6 +242,31 @@ nav {
 }
   
 
+/* FAQs Section */
+.accordion-button:not(.collapsed) {
+  background-color: var(--second-color);
+  color: var(--primary-color);
+  line-height: 0;
+  border-color: none;
+}
+
+
+/* Contact Section */
+#contact{
+  opacity: 0.7;
+  width: 100%;
+  height: 450px;
+  background-image: url(https://media.istockphoto.com/id/1501067984/photo/body-building-center-with-exercise-machines-integrated-inside-a-penthouse-recreation-area.webp?b=1&s=170667a&w=0&k=20&c=vRo0aXjlewE8R0Na4aNgjgtY5_gyDKCq-FwRYrVDsjw=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 
 /* .footer{
     background-color: orangered;
@@ -367,3 +391,27 @@ footer .container {
     text-align: center;
   }
 }
+
+.up-arrow{
+  display: block;
+  width: 50px;
+  height: 45px;
+  text-align: center;
+  font-size: 30px;
+  color: var(--primary-color);
+  position: fixed;
+  border-radius: 4px;
+  bottom: 20px;
+  right: 5px;
+  animation: bouncy 2s ease-in-out infinite;
+}
+
+@keyframes bouncy{
+  0%{transform: translateY(0);}
+  50%{
+      transform: translateY(-15px);
+      box-shadow: 0 20 0 30;
+  }
+}
+
+
