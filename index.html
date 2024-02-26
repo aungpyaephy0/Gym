@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gym and Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/195bf0eff4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style/style.css">
@@ -16,36 +19,48 @@
 
 <nav class="navbar navbar-expand-lg py-3 text-uppercase">
   <div class="container">
-    <a href="#" class="navbar-brand text-white">
+    <a href="#home" class="navbar-brand text-white">
       Gym & Fitness
     </a>
     <button class="navbar-toggler" data-bs-toggle="collaspe" data-bs-target="#myNavbar">
       <span class="nabar-toggler-icon"></span>
     </button>
-    <div class="collaspse navbar-collapse">
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item mx-1">
-          <a href="#" class="text-white nav-link hover-underline-animation">Home</a>
+          <a href="#home" class="text-white nav-link hover-underline-animation">Home</a>
         </li>
         <li class="nav-item mx-1">
-          <a href="#" class="text-white nav-link hover-underline-animation">Membership Plan</a>
+          <a href="#membership" class="text-white nav-link hover-underline-animation">Membership</a>
         </li>
+        <li class="nav-item mx-1">
+          <a href="#about-us" class="text-white nav-link hover-underline-animation">About Us</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a href="#classes" class="text-white nav-link hover-underline-animation">Classes</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a href="#contact-us" class="text-white nav-link hover-underline-animation">Contact Us</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a href="#trainners" class="text-white nav-link hover-underline-animation">Trainners</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a href="#FAQs" class="text-white nav-link hover-underline-animation">FAQ</a>
+        </li>
+      </ul>
 
-        <li class="nav-item mx-1">
-          <a href="#" class="text-white nav-link hover-underline-animation">Section</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="" class="nav-link  text-white">Sing In</a>
         </li>
-
-        <li class="nav-item mx-1">
-          <a href="#" class="text-white nav-link hover-underline-animation">Contact Us</a>
-        </li>
-
-        <li class="nav-item mx-1">
-          <a href="#" class="text-white nav-link hover-underline-animation">FAQ</a>
+        <li class="nav-item">
+          <a href="" class="nav-link  text-white">Sing Up</a> 
         </li>
       </ul>
     </div>
 </nav>
-<header >
+<header>
   <img src="images/cover.jpg" style="width: 100%; height: 100%; z-index: -2; " alt="">
   <!-- <div class="cover-overlay" style="width: 100%;
   height: 100%;
@@ -63,7 +78,7 @@
 </header>
 
 
-<!-- For About Us Section -->
+
 <div class="menu-wrap">
   <input type="checkbox" class="toggler">
   <div class="hamburger">
@@ -84,9 +99,11 @@
     </div>
   </div>
 </div>
+
+<!-- About Us Section -->
 <div class="container">
   <div class="content-title">
-    <h4>
+    <h4 id="about-us">
       About Us
     </h4>
   </div>
@@ -95,9 +112,9 @@
     <div class="container px-5">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img data-aos="fade-left" class="img-fluid rounded" src="images/about.jpg" alt="">
+          <img data-aos="fade-right" data-aos-duration="600" class="img-fluid rounded" src="images/about.jpg" alt="">
         </div>
-        <div data-aos="fade-right" class="col-md-6">
+        <div data-aos="fade-left" class="col-md-6">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime incidunt saepe asperiores vel,
             voluptatibus eveniet. Sapiente consequuntur delectus necessitatibus eaque recusandae? Eveniet blanditiis
@@ -112,7 +129,7 @@
   <section class="about-us">
     <div class="container px-5 mt-3">
       <div class="row align-items-center">
-        <div data-aos="fade-right" class="col-md-6">
+        <div data-aos="fade-right" data-aos-duration="600" class="col-md-6">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime incidunt saepe asperiores vel,
             voluptatibus eveniet. Sapiente consequuntur delectus necessitatibus eaque recusandae? Eveniet blanditiis
@@ -120,38 +137,35 @@
           </p>
         </div>
         <div class="col-md-6">
-          <img data-aos="fade-left" class="img-fluid rounded"
-            src="images/about2.jpg"
-            alt="">
+          <img data-aos="fade-left" data-aos-duration="600" class="img-fluid rounded" src="images/about2.jpg" alt="">
         </div>
       </div>
     </div>
   </section>
 
-<!-- For Classes Section -->
+  <!-- For Classes Section -->
   <div class="content-title">
-    <h4 class="text-center">
+    <h4 class="text-center" id="classes">
       Classes
     </h4>
   </div>
   <div class="border-line"></div>
-  <section id="classes" class="py-3">
+  <section class="py-3">
     <div class="row row-cols-1 row-cols-md-3 g-4 py-3 px-5">
-      <div class="col">
+      <div class="col" data-aos="fade-up" data-aos-duration="500">
         <div class="card h-100">
-          <img src="images/class2.jpg"card-img-top" alt="...">
+          <img src="images/class2.jpg" alt="">
           <div class="card-body">
             <h5 class="card-title">Gym</h5>
-            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eaque pariatur officiis
-              consectetur, obcaecati iste.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet at dolorem ipsam,
+              iure, nisi obcaecati quidem quae minus eius rerum exercitationem vero deserunt!</p>
             <small class="text-body-secondary">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col" data-aos="fade-up" data-aos-duration="900">
         <div class="card h-100">
-          <img
-            src="images/class1.jpg"...">
+          <img src="images/class1.jpg" alt="">
           <div class="card-body">
             <h5 class="card-title">Boxing</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet at dolorem ipsam,
@@ -160,7 +174,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col" data-aos="fade-up" data-aos-duration="1200">
         <div class="card h-100">
           <img src="images/class3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -178,7 +192,7 @@
   <section class="news" id="news">
     <div class="container px-5">
       <div class="row align-items-center">
-        <div class="col-md-6 rounded">
+        <div class="col-md-6 rounded" data-aos="fade-right" data-aos-duration="1300">
           <div id="carouselExampleFade" class="carousel slide carousel-fade rounded">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -203,10 +217,12 @@
             </button>
           </div>
         </div>
-        <div data-aos="fade-right" class="col-md-6">
-          <h5 style="color: #859398; font-size:1.5rem;">Our Latest News</h5>
-          <div class="border-line" style="margin-left: 1px; height: 3px; margin: 5px;"></div>
-          <p>
+        <div data-aos="fade-right" data-aos-duration="600" class="col-md-6">
+          <h5 style="color: #859398; font-size:1.5rem;" data-aos="fade-right" data-aos-duration="1000">Our Latest News
+          </h5>
+          <div class="border-line" style="margin-left: 1px; height: 3px; margin: 15px;" data-aos="fade-left"
+            data-aos-duration="1200"></div>
+          <p data-aos="fade-right">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime incidunt saepe asperiores vel,
             voluptatibus eveniet. Sapiente consequuntur delectus necessitatibus eaque recusandae? Eveniet blanditiis
             veritatis, laudantium dolore quam consequatur rem?
@@ -220,11 +236,12 @@
   <section class="clients-says">
     <div class="container px-5 py-5">
       <div class="row align-items-center">
-        <div data-aos="fade-right" class="col-md-6">
+        <div data-aos="fade-right" class="col-md-6" data-aos-duration="1000">
           <div style="color: #859398; font-size:1.5rem;">Testimonials
-            <div class="border-line" style="margin-left: 1px; height: 2px; margin: 5px;"></div>
+            <div class="border-line" style="margin-left: 1px; height: 2px; margin: 5px;" data-aos="fade-left"
+              data-aos-duration="1400"></div>
           </div>
-          <h3>Good News From Our Clients</h3>
+          <h3 data-aos="fade-right" data-aos-duration="1200">Good News From Our Clients</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime incidunt saepe asperiores vel,
             voluptatibus eveniet. Sapiente consequuntur delectus necessitatibus eaque recusandae? Eveniet blanditiis
@@ -234,11 +251,9 @@
         <div class="card-grid col-md-6">
           <div class="container text-start">
             <div class="row row-cols-2">
-              <div class="col py-2 px-2">
+              <div class="col py-2 px-2" data-aos="fade-up" data-aos-duration="900">
                 <div class="card" style="width: 18rem;background-color:#f3f3fa;">
                   <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                       card's content.</p>
                     <img src="images/cover.jpg" width="50px" height="50px" style="border-radius: 50%;">
@@ -246,11 +261,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col py-2 px-2">
+              <div class="col py-2 px-2" data-aos="fade-up" data-aos-duration="1200">
                 <div class="card" style="width: 18rem; background-color:#f3f3fa;">
                   <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                       card's content.</p>
                     <img src="images/cover.jpg" width="50px" height="50px" style="border-radius: 50%;">
@@ -258,11 +271,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col py-2 px-2">
+              <div class="col py-2 px-2" data-aos="fade-up" data-aos-duration="1400">
                 <div class="card" style="width: 18rem; background-color:#f3f3fa;">
                   <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                       card's content.</p>
                     <img src="images/cover.jpg" width="50px" height="50px" style="border-radius: 50%;">
@@ -270,7 +281,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col py-2 px-2">
+              <div class="col py-2 px-2" data-aos="fade-up" data-aos-duration="1600">
                 <div class="card" style="width: 18rem; background-color:#f3f3fa;">
                   <div class="card-body">
                     <!-- <h5 class="card-title">Card title</h5>
@@ -288,18 +299,18 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Trainners Section -->
   <section class="trainner" id="trainner">
     <div class="content-title">
-      <h4>
+      <h4 data-aos="fade-right" data-aos-duration="600">
         Trainners
       </h4>
     </div>
-    <div class="border-line"></div>
+    <div data-aos="fade-left" data-aos-duration="600" class="border-line"></div>
     <div class="container container-box px-4">
       <div class="box col-md-4" data-aos-anchor-placement="top-center">
-        <div class="imgBox rounded-2" style="border: 1px solid #040814;">
+        <div class="imgBox rounded-2" style="border: 1px solid #040814;" data-aos="fade-up" data-aos-duration="900">
           <img
             src="https://media.istockphoto.com/id/1040501222/photo/portrait-of-a-personal-trainer-in-the-gym.webp?b=1&s=170667a&w=0&k=20&c=DVPO9-X0AMcWQFvxUMdwj4W23p_EmdyzIwx_ymKWiU8="
             width="300px" height="300px">
@@ -313,7 +324,7 @@
       </div>
 
       <div class="box col-md-4">
-        <div class="imgBox rounded-2" style="border: 1px solid #040814;">
+        <div class="imgBox rounded-2" style="border: 1px solid #040814;" data-aos="fade-up" data-aos-duration="1400">
           <img
             src="https://media.istockphoto.com/id/1040501222/photo/portrait-of-a-personal-trainer-in-the-gym.webp?b=1&s=170667a&w=0&k=20&c=DVPO9-X0AMcWQFvxUMdwj4W23p_EmdyzIwx_ymKWiU8="
             width="300px" height="300px">
@@ -326,7 +337,7 @@
         </div>
       </div>
       <div class="box col-md-4">
-        <div class="imgBox rounded-2" style="border: 1px solid #040814;">
+        <div class="imgBox rounded-2" style="border: 1px solid #040814;" data-aos="fade-up" data-aos-duration="1700">
           <img
             src="https://media.istockphoto.com/id/1040501222/photo/portrait-of-a-personal-trainer-in-the-gym.webp?b=1&s=170667a&w=0&k=20&c=DVPO9-X0AMcWQFvxUMdwj4W23p_EmdyzIwx_ymKWiU8="
             width="300px" height="300px">
@@ -342,16 +353,17 @@
 
   </section>
 
+  <!-- Membership Section  -->
   <section class="membership">
     <div class="content-title">
-      <h4 class="text-center">
+      <h4 class="text-center" data-aos="fade-left" data-aos-duration="600">
         Plans
       </h4>
     </div>
-    <div class="border-line"></div>
+    <div class="border-line" data-aos="fade-right" data-aos-duration="600"></div>
     <div class="container py-5">
       <div class="row text-center align-items-center">
-        <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-duration="900">
           <div class="bg-white py-5 rounded-lg shadow">
             <h1 class="h6 text-uppercase font-weight-bold mb-4">
               Basics Plan
@@ -364,75 +376,87 @@
             </div>
             <ul class="list-unstyled my-4 text-small text-left">
               <li class="mb-3">
-                <i style="color:#45db7a"class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i style="color:#45db7a" class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
               </li>
               <li class="mb-3">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i style="color:#45db7a" class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
               </li>
               <li class="mb-3 text-decoration-line-through">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i style="color:#df341d" class="fa-solid fa-xmark" class="fa-solid fa-check"></i> Lorem ipsum dolor amet
+                consectetur.
               </li>
               <li class="mb-3 text-decoration-line-through">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i style="color:#df341d" class="fa-solid fa-xmark" class="fa-solid fa-check"></i> Lorem ipsum dolor amet
+                consectetur.
+              </li>
+              <li class="mb-3 text-decoration-line-through">
+                <i style="color:#df341d" class="fa-solid fa-xmark" class="fa-solid fa-check"></i> Lorem ipsum dolor amet
+                consectetur.
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-duration="1300">
           <div class="bg-white py-5 rounded-lg shadow">
             <h1 class="h6 text-uppercase font-weight-bold mb-4">
               Annual Plan
             </h1>
-            <h2 class="h1 font-weight-bold">$100
+            <h2 class="h1 font-weight-bold">$500
               <span class="text-small font-weight-normal ml-2">/month</span>
             </h2>
             <div class="custom-serperator my-4 mx-auto bg-primary"></div>
-          
+
             <ul class="list-unstyled my-4 text-small text-left">
               <li class="mb-3">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
               </li>
               <li class="mb-3">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
               </li>
-              <li class="mb-3 text-decoration-line-through">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+              <li class="mb-3">
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
               </li>
-              <li class="mb-3 text-decoration-line-through">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+              <li class="mb-3">
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
               </li>
-              <li class="mb-3 text-decoration-line-through">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+              <li class="mb-3">
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
               </li>
-              <li class="mb-3 text-decoration-line-through">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+              <li class="mb-3">
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
+              </li>
+              <li class="mb-3">
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="col-lg-4 mb-5 mb-lg-0 ">
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-duration="1700">
           <div class="bg-white py-5 rounded-lg shadow">
             <h1 class="h6 text-uppercase font-weight-bold mb-4">
               6 month Plan
             </h1>
-            <h2 class="h1 font-weight-bold">$100
+            <h2 class="h1 font-weight-bold">$300
               <span class="text-small font-weight-normal ml-2">/month</span>
             </h2>
             <div class="custom-serperator my-4 mx-auto bg-primary"></div>
             <ul class="list-unstyled my-4 text-small text-left">
               <li class="mb-3">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
               </li>
               <li class="mb-3">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
+              </li>
+              <li class="mb-3">
+                <i class="fa-solid fa-check" style="color:#45db7a"></i> Lorem ipsum dolor amet consectetur.
               </li>
               <li class="mb-3 text-decoration-line-through">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i class="fa-solid fa-xmark" style="color:#df341d"></i> Lorem ipsum dolor amet consectetur.
               </li>
               <li class="mb-3 text-decoration-line-through">
-                <i class="fa-solid fa-check"></i> Lorem ipsum dolor amet consectetur.
+                <i class="fa-solid fa-xmark" style="color:#df341d"></i> Lorem ipsum dolor amet consectetur.
               </li>
             </ul>
           </div>
@@ -440,22 +464,23 @@
       </div>
     </div>
   </section>
-
 </div>
-  <section id="contact" class="my-2 text-white">
-    <div class="h3">Contact US</div>
-    <div class="h2">+009284923</div>
-    <a href="" class="btn btn-danger">Call Us Now</a>
-  </section>
-  
+
+<!-- Contact Us Section -->
+<section id="contact" class="my-2 text-black">
+  <div class="h3">Contact US</div>
+  <div class="h2">+009284923</div>
+  <a href="" class="btn btn-info">Call Us Now</a>
+</section>
+
 <!-- FAQ Section -->
 <div class="container">
   <div class="content-title">
-    <h4 class="text-center">
+    <h4 class="text-center" data-aos="fade-left" data-aos-duration="600">
       FAQs
     </h4>
   </div>
-  <div class="border-line"></div>
+  <div data-aos="fade-right" data-aos-duration="060" class="border-line"></div>
   <section class="FAQ" id="FAQ">
     <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
@@ -467,7 +492,8 @@
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            <code>.accordion-flush</code> class. This is the first item's accordion body.
+          </div>
         </div>
       </div>
       <div class="accordion-item">
@@ -480,7 +506,8 @@
         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
             <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-            filled with some actual content.</div>
+            filled with some actual content.
+          </div>
         </div>
       </div>
       <div class="accordion-item">
@@ -494,7 +521,8 @@
           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
             <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
             happening here in terms of content, but just filling up the space to make it look, at least at first glance,
-            a bit more representative of how this would look in a real-world application.</div>
+            a bit more representative of how this would look in a real-world application.
+          </div>
         </div>
       </div>
       <div class="accordion-item">
@@ -508,7 +536,8 @@
           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
             <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
             happening here in terms of content, but just filling up the space to make it look, at least at first glance,
-            a bit more representative of how this would look in a real-world application.</div>
+            a bit more representative of how this would look in a real-world application.
+          </div>
         </div>
       </div>
       <div class="accordion-item">
@@ -522,11 +551,13 @@
           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
             <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
             happening here in terms of content, but just filling up the space to make it look, at least at first glance,
-            a bit more representative of how this would look in a real-world application.</div>
+            a bit more representative of how this would look in a real-world application.
+          </div>
         </div>
       </div>
     </div>
   </section>
+
   </body>
 </div>
 
@@ -568,6 +599,8 @@
       </div>
     </div>
     <div>
+ 
+      <a href=""></a>
       <h6 class="footer-category">Social</h6>
       <div>
         <a href="https://www.facebook.com/" target="_blank"
@@ -575,7 +608,14 @@
         <a href="https://www.instagram.com/" target="_blank"
           class="footer-category-item hover-underline-animation">Instagram</a><br>
         <a href="https://twitter.com/" target="_blank"
-          class="footer-category-item hover-underline-animation">Twitter</a><br>
+          class="footer-category-item hover-underline-animation">Twitter</a>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>  
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""></a>
+        </div>
       </div>
     </div>
   </div>
@@ -584,7 +624,8 @@
   </div>
 </footer>
 
-  <a href="#header" class="up-arrow"><i class="fa-solid fa-angle-up"></i>
-    <!-- <i class="fa-solid fa-arrow-up"></i> -->
-  </a>
+<a href="#home" class="up-arrow"><i class="fa-solid fa-angle-up"></i>
+  <!-- <i class="fa-solid fa-arrow-up"></i> -->
+</a>
+
 </html>
